@@ -11,9 +11,9 @@ pipeline {
                 echo 'Compile the source code' 
             }
         }
-        stage('Security Check') {
+        stage('Security Check Phase') {
             steps {
-                echo 'Run the security check against the application' 
+                echo 'Run the security check against the application and by the way hi! I am Vaishnavi:)' 
             }
         }
         stage('Run Unit Tests') {
@@ -26,7 +26,7 @@ pipeline {
                 echo 'Run only crucial integration tests from the source code' 
             }
         }
-        stage('Publish Artifacts') {
+        stage('Final stage- Publish Artifacts') {
             steps {
                 echo 'Save the assemblies generated from the compilation' 
             }
